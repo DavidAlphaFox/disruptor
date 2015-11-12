@@ -19,7 +19,7 @@ import sun.misc.Unsafe;
 
 import com.lmax.disruptor.util.Util;
 
-
+// 三个类，就为了防止CPU cacheline的false sharing
 class LhsPadding
 {
     protected long p1, p2, p3, p4, p5, p6, p7;
